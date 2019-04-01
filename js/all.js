@@ -2,9 +2,6 @@
 'use strict';
 
 $(document).ready(function () {
-    $('#sponsorAction').click(function () {
-        $('html,body').animate({ scrollTop: $("#leaderboard").offset().top }, 'slow');
-    });
     //Nav click slick smooth scroll
     // Select all links with hashes
     $('a[href*="#"]')
@@ -38,9 +35,6 @@ $(document).ready(function () {
         }
     });
 
-    // Map image zoom
-    $('.map-image-wrap').zoom({ url: '../img/map-big.jpg' });
-
     // Close nav on link click
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
@@ -50,8 +44,10 @@ $(document).ready(function () {
     window.onscroll = function () {
         myFunction();
     };
+
     // Get the header
     var header = document.getElementById("siteNavTop");
+
     // Get the offset position of the navbar
     var sticky = header.offsetTop;
 
@@ -65,33 +61,6 @@ $(document).ready(function () {
             $(document.body).removeClass("nav-fixed");
         }
     }
-
-    //Profile Image upload
-    $(document).on('change', '.form-control-file :file', function () {
-        var input = $(this),
-            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-        input.trigger('fileselect', [label]);
-    });
-
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                // $('#img-upload').show();
-                // $('#img-upload').attr('src', e.target.result);
-                $('.profile-image').css('background-image', 'url(' + e.target.result + ')');
-                console.log(e.target.result);
-            };
-
-            reader.readAsDataURL(input.files[0]);
-            $('.fa-user-circle').hide();
-        }
-    }
-
-    $("#profilePhotoUpload").change(function () {
-        readURL(this);
-    });
 });
 
 },{}]},{},[1]);

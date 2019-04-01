@@ -6,19 +6,19 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Bricks and Gems</title>
     <script src="./js/vendor/jquery.min.js"></script>
-    <script src="./js/vendor/jquery.zoom.js"></script>
-    <script src="./js/vendor/owl.carousel.min.js"></script>
     <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/circletype.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/all.js"></script>
     <link rel="shortcut icon" href="./favi.png" type="image/x-icon">
     <link rel="icon" href="./favi.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Fredoka+One|Nunito:300,400,600,700,800,900"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/vendor/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/vendor/owl.theme.green.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="landing-page">
@@ -31,42 +31,51 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">The New Chedar</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">Dedication Opportunities</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">???????</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">The New Cheider</a></li>
+            <li class="nav-item"><a class="nav-link" href="/dedication">Dedication Opportunities</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
             <li class="d-none d-lg-block nav-item menu-item-donate">
-                <button class="header-button" onclick="window.location.href='/donate'">General Donation</button>
+                <button class="header-button" onclick="window.location.href='/general-donation'">General Donation
+                </button>
             </li>
         </ul>
     </div>
 </nav>
 <section class="section-hero">
-    <div class="owl-carousel owl-theme">
-        <div class="hero-banner hero-banner-1">
-            <div class="hero-content">
-                <h2>Help us finish our new Chedar</h2>
-                <h1>Every BRICK counts!</h1>
-                <button class="hero-button">
-                    Add another Brick
-                </button>
+    <div class="hero-carousel">
+        <div>
+            <div class="hero-banner banner-1">
+                <div class="hero-content">
+                    <h2>Help us finish our new Cheider</h2>
+                    <h1>Every BRICK counts!</h1>
+                    <button class="hero-button">
+                        Add another Brick
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="hero-banner hero-banner-2">
-            <div class="hero-content">
-                <h2>Help us finish our new Chedar</h2>
-                <h1>Every BRICK counts!</h1>
-                <button class="hero-button">
-                    Add another Brick
-                </button>
+        <div>
+            <div class="hero-banner banner-2 with-overlay">
+                <div class="hero-content mb-5">
+                    <h2 class="mb-5" id="curved">LOREMIPSUM DOLORIPSUM</h2>
+                    <h1>Let's build it for them!</h1>
+                    <button class="hero-button">
+                        Be part of it
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="hero-banner hero-banner-3">
-            <div class="hero-content">
-                <h2>Help us finish our new Chedar</h2>
-                <h1>Every BRICK counts!</h1>
-                <button class="hero-button">
-                    Add another Brick
-                </button>
+        <div>
+            <div class="hero-banner banner-3 with-overlay">
+                <div class="hero-content">
+                    <h2 class="mb-4" id="curvedSecond">LOREMIPSUM DOLORIPSUM</h2>
+                    <div class="hero-logo">
+                        <img src="./img/hero-logo.png" alt="">
+                    </div>
+                    <button class="hero-button">
+                        Let's build togather
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -110,9 +119,23 @@
 <section class="main">
     <section id="leaderboard" class="section-leaderboard">
         <div class="container">
-            <h2 class="display-3 text-center">
+            <h2 class="display-3 text-center mb-5">
                 Our Builders
             </h2>
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <div class="search-builder text-center">
+                        <div class="input-group mb-3 position-relative">
+                            <input type="text" class="form-control" placeholder="Search builder">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="board">
                 <div class="row">
                     <div class="col-md-4 col-ld-2 col-sm-6 col-12">
@@ -122,7 +145,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -135,7 +158,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -148,7 +171,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -161,7 +184,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -174,7 +197,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     DONATE
                                 </a>
                             </div>
@@ -187,7 +210,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -200,7 +223,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -213,7 +236,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -226,7 +249,7 @@
                                 <h3>Y.Levi</h3>
                                 <p>Lorem Ipsum</p>
                                 <p class="mb-2 how-much-sponsored">$ 10000 donated of $ 20000 goal</p>
-                                <a href="/runner-donate" class="custom-button donate-runner">
+                                <a href="/builder-donate" class="custom-button donate-runner">
                                     SPONSOR
                                 </a>
                             </div>
@@ -253,7 +276,7 @@
                         <div class="donation-type">About Darchai <br> Avoseinu</div>
                     </div>
                     <div class="col-6">
-                        <div class="donation-type">The New Chedar</div>
+                        <div class="donation-type">The New Cheider</div>
                     </div>
                 </div>
             </div>
