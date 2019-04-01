@@ -4,9 +4,9 @@ $(document).ready(function () {
     circleType.radius(800);
     circleTypeSecond.radius(800);
     $('.hero-carousel').slick({
-        autoplay: false,
-        infinite: true  ,
-        speed: 300,
+        autoplay: true,
+        infinite: true,
+        speed: 3000,
         slidesToShow: 1,
         arrows: false,
         dots: false,
