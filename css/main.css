@@ -188,7 +188,7 @@ body.about-page article.about-renewal p {
 
 body.dedication-page section.section-hero {
   height: 500px;
-  background-image: url("../img/banner3.png");
+  background-image: url("https://levon-avetisyan.github.io/bricksandgems/img/banner3.png");
   background-size: cover;
   background-position: center center;
   position: absolute;
@@ -642,7 +642,7 @@ section.section-leaderboard {
 section.section-donation-types {
   position: relative;
   padding: 80px 0;
-  background-image: url("../img/Banner3.png");
+  background-image: url("https://levon-avetisyan.github.io/bricksandgems/img/Banner3.png");
   background-size: cover;
   background-position: center center; }
   section.section-donation-types .donation-type {
@@ -771,11 +771,11 @@ section.section-contact {
       background-color: white;
       color: #41210A; }
     .hero-carousel .hero-banner.banner-1 {
-      background-image: url("../img/banner1.png"); }
+      background-image: url("https://levon-avetisyan.github.io/bricksandgems/img/banner1.png"); }
     .hero-carousel .hero-banner.banner-2 {
-      background-image: url("../img/banner2.png"); }
+      background-image: url("https://levon-avetisyan.github.io/bricksandgems/img/banner2.png"); }
     .hero-carousel .hero-banner.banner-3 {
-      background-image: url("../img/banner3.png"); }
+      background-image: url("https://levon-avetisyan.github.io/bricksandgems/img/banner3.png"); }
     .hero-carousel .hero-banner .hero-content {
       position: relative;
       z-index: 1; }
