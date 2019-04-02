@@ -9,7 +9,6 @@ $(document).ready(function () {
         speed: 3000,
         slidesToShow: 1,
         arrows: false,
-        dots: false,
-        // adaptiveHeight: true
+        dots: false
     });
 });
