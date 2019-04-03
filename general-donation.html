@@ -55,34 +55,37 @@
         </h3>
         <div class="donate-form-wrap">
             <form>
-                <h3 class="text-center choose-amount">Choose the amount</h3>
+                <h3 class="text-center choose-amount px-3">Choose the amount</h3>
                 <div class="amount-calculator-wrap">
                     <div class="amount-calculator mb-3">
-                        <input type="text" class="form-control">
+                        <!--<input placeholder="0.00" step="0.01" id="otherAmountInput" type="number" min="0" oninput="validity.valid||(value='');" -->
+                        <!--class="form-control bps-input other-amount-input ui-keyboard-input input-sm ui-keyboard-input-current" -->
+                        <!--aria-haspopup="true" role="textbox">-->
+                        <input role="textbox" placeholder="0" type="number" min="0" oninput="validity.valid||(value='');" id="amountToMultiply" class="form-control">
                         <span class="multiplied">X</span>
                         <img src="https://levon-avetisyan.github.io/bricksandgems/img/50.png" alt="">
                         <span class="equal-sign">=</span>
-                        <p class="amount-calculated">
-                            $ 250
+                        <p id="calcualtedBricks" class="amount-calculated">
+
                         </p>
                     </div>
                     <div class="btn-group-toggle row" data-toggle="buttons">
-                        <div class="col-4">
-                            <label class="btn btn-secondary" for="donateAmountXs">
+                        <div class="col-4 text-left text-sm-center">
+                            <label class="amount-select-label btn btn-secondary" for="donateAmountXs">
                                 <img src="https://levon-avetisyan.github.io/bricksandgems/img/500.png" alt="">
-                                <input type="radio" id="donateAmountXs" name="donation_amount" value="$36">
+                                <input type="radio" id="donateAmountXs" name="donation_amount" value="$500">
                             </label>
                         </div>
-                        <div class="col-4">
-                            <label class="btn btn-secondary" for="donateAmountMd">
+                        <div class="col-4 text-left text-sm-center">
+                            <label class="amount-select-label btn btn-secondary donate-cornerstone" for="donateAmountMd">
                                 <img src="https://levon-avetisyan.github.io/bricksandgems/img/1000.png" alt="">
-                                <input type="radio" id="donateAmountMd" name="donation_amount" value="$54">
+                                <input type="radio" id="donateAmountMd" name="donation_amount" value="$1000">
                             </label>
                         </div>
-                        <div class="col-4">
-                            <label class="btn btn-secondary" for="donateAmountLg">
-                                <img class="sm" src="https://levon-avetisyan.github.io/bricksandgems/img/1800.png" alt="">
-                                <input type="radio" id="donateAmountLg" name="donation_amount" value="$100">
+                        <div class="col-4 text-left text-sm-center">
+                            <label class="amount-select-label btn btn-secondary donate-wall" for="donateAmountLg">
+                                <img src="https://levon-avetisyan.github.io/bricksandgems/img/1800.png" alt="">
+                                <input type="radio" id="donateAmountLg" name="donation_amount" value="$1800">
                             </label>
                         </div>
                     </div>
@@ -92,7 +95,7 @@
                         Custom amount
                         <i class="fa fa-dollar-sign ml-1"></i>
                     </p>
-                    <input type="text" class="form-control custom-amount-control">
+                    <input type="number" placeholder="0" type="number" min="0" oninput="validity.valid||(value='');" id="customAmount" class="form-control custom-amount-control">
                 </div>
                 <div class="section-separator cardholder-details">
                     <h3>Cardholder's details</h3>
@@ -136,7 +139,7 @@
                         <label for="">Card Number</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group row no-gutters">
+                    <div class="form-group row no-gutters align-items-end">
                         <div class="col">
                             <div class="pr-1 pr-sm-2">
                                 <label class="label-sm d-none d-sm-block" for="">Expiry Month</label>
@@ -163,7 +166,7 @@
                         <textarea class="form-control client-comment"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-warning btn-lg btn-block text-white">PROCESS</button>
+                <button type="submit" class="btn btn-warning text-white btn-lg btn-block">PROCESS</button>
             </form>
         </div>
     </div>

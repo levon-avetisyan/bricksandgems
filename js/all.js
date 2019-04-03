@@ -2,7 +2,7 @@
 'use strict';
 
 $(document).ready(function () {
-    //Nav click slick smooth scroll
+    // Nav click slick smooth scroll
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -61,6 +61,31 @@ $(document).ready(function () {
             $(document.body).removeClass("nav-fixed");
         }
     }
+
+    $("#calcualtedBricks").text("$"+0);
+    
+    $("#amountToMultiply").on("focus",function () {
+        $("#customAmount").val(" ");
+        $("input[name='donation_amount']").parent().removeClass('active');
+        $("input[name='donation_amount']").prop("checked", false);
+    }).on("blur",function () {
+        var calcaulatedBricks;
+        calcaulatedBricks = $("#amountToMultiply").val() * 50;
+        $("#calcualtedBricks").text("$"+calcaulatedBricks);
+    });
+
+    $("input[name='donation_amount']").on('change',function () {
+        $("#amountToMultiply").val(" ");
+        $("#customAmount").val(" ");
+        $("#calcualtedBricks").text("$"+0);
+    });
+
+    $("#customAmount").on("focus",function () {
+        $("#amountToMultiply").val(" ");
+        $("#calcualtedBricks").text("$"+0);
+        $("input[name='donation_amount']").parent().removeClass('active');
+        $("input[name='donation_amount']").prop("checked", false);
+    });
 });
 
 },{}]},{},[1]);
